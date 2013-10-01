@@ -3,8 +3,12 @@ define([
 ], function(Backbone) {
 
     var Teaching = Backbone.Model.extend({
-        url: '/api/locations/:id'
+
+        initialize: function() {
+        	console.log('created');
+        }
     });
+
 
     return Teaching;
 });

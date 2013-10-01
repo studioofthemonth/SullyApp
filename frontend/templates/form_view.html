@@ -1,0 +1,13 @@
+<div class="modal-content">
+    <h2>Create New Teaching Event</h2>
+    <h4>{{location.name}}</h4>
+    <span>{{location.type}}</span>
+    <form action="javascript:void(0);">
+        <input type="hidden" id="location_index" name="location_index" value="{{index}}">
+        <label for="acuity">Acuity:</label><input type="range" id="acuity" name="acuity" min="1" max="5">
+        <label for="learner_rank">Learner Rank:</label><input type="range" id="learner_rank" name="learner_rank" min="1" max="5">
+        <label for="teacher_rank">Teacher Rank:</label><input type="range" id="teacher_rank" name="teacher_rank" min="1" max="5">
+        <label for="complaint">Complaint:</label><input type="text" id="complaint" name="complaint">
+        <input type="submit"></input>
+    </form>
+</div>
