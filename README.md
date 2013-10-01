@@ -1,4 +1,3 @@
 SullyApp
 ========
-
-SullyApp
+Getting Started:
