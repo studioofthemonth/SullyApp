@@ -1,8 +1,10 @@
+// define is require, matches jquery, underscore, etc to $, _ etc
 define([
     'jquery',
     'underscore',
     'backbone',
     'views/form_view',
+    // hbars! is a plugin for require hbars!path/to/template
     'hbars!templates/locations_view'
 ], function($, _, Backbone, FormView, LocationsTemplate) {
 
