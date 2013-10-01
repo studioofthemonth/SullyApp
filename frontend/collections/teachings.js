@@ -1,10 +1,10 @@
 define([
     'backbone',
     'models/teaching'
-], function(Backbone, Location) {
+], function(Backbone, Teaching) {
 
     var Teachings = Backbone.Collection.extend({
-        url: '/api/locations',
+        url: '/api/teachings',
         model: Teaching
     });
 

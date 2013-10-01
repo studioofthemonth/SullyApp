@@ -9,31 +9,28 @@ module.exports = function(app) {
         res.send(db.Locations);
     });
 
-    app.put('/api/teaching', function(req, res) {
-        var teaching = new Teaching();
-        teaching.acuity = this.params.acuity;
-        teaching.complaint = this.params.complaint; 
-        teaching.learnerRank = this.params.learnerRank; 
-        teaching.teacherRank = this.params.teacherRank; 
-        teaching.locationIndex = this.params.locationIndex;
+    app.post('/api/teachings', function(req, res) {
+        console.log(req.body);
 
-        product.save(function (err, items, count) {
-            if (err) console.log(err);
+        var teaching = new Teaching();
+        teaching.acuity = req.body.acuity;
+        teaching.complaint = req.body.complaint; 
+        teaching.learnerRank = req.body.learner_rank; 
+        teaching.teacherRank = req.body.teacher_rank; 
+        teaching.locationIndex = req.body.location_index;
+
+        teaching.save(function (err, items, count) {
+            if (err) res.send(err);
             else res.send(items);
         })
     });
 
-    app.get('/api/teaching', function(req, res) {
-        var teaching = new Teaching();
-        teaching.complaint = 'Shit sucked ass yo!'; 
-        teaching.learnerRank = 3; 
-        teaching.teacherRank = 5; 
-        teaching.locationIndex = 100;
+    app.get('/api/teachings', function(req, res) {
+        
+    });
 
-        teaching.save(function (err, items) {
-            if (err) res.send(err);
-            else res.send(items);
-        })
+    app.all('/api/*', function(req, res) {
+        res.send('Not a valid endpoint');
     });
 
     // Frontend Routes
