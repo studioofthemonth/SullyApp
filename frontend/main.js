@@ -1,4 +1,6 @@
+// main entry pint for require
 require.config({
+    // referencing the libs folder
     paths: {
         jquery: 'libs/jquery-1.10.2.min',
         jqueryui: 'libs/jquery-ui-1.10.3.min',

@@ -2,8 +2,8 @@
 ========
 ## Getting Started:  
 brew install mongodb (assume brew installed and mongo not installed)  
-sudo npm install -g express  
-sudo npm install -g mongoose  
+sudo npm install express (install locally)  
+sudo npm install mongoose (install locally)
 
 ### Start Server:  
 mongod (get mongo running first)  
