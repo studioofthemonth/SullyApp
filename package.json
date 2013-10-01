@@ -1,0 +1,11 @@
+{
+  "name": "SullyApp",
+  "description": "App for tracking learning data in a hospital Unit",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "express": "3.x",
+    "mongoose": "3.x",
+    "underscore": "~1.5.2"
+  }
+}
