@@ -38,9 +38,12 @@ define([
                     complaint: $target.find('#complaint').val(),
                 });
 
-            console.log(teaching);
+            teaching.save()
+            .success(function() {
 
-            teaching.save();
+            }).error(function() {
+                
+            });
         }
     });
 

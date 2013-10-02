@@ -7,7 +7,7 @@ app.configure(function () {
     app.use('/static', express.static(__dirname + '/frontend'));
 });
 
-var router = require('./router')(app);
+var router = require('./api/router')(app);
 
 // Start Server
 app.listen(3000);
